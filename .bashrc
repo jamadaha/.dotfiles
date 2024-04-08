@@ -116,3 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 alias dotfiles='/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+. "$HOME/.cargo/env"
+
+export PATH="$PATH:/opt/nvim-linux64/bin"
+export RUSTC_WRAPPER=/home/jamadaha/.cargo/bin/sccache
