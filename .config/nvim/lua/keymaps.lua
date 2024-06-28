@@ -1,7 +1,9 @@
 -- Keymaps for better default experience
 -- Save file
---
-vim.keymap.set({ 'n', 'i' }, '<C-s>', '<C-\\><C-N>:Format<Enter>:w<Enter>')
+vim.keymap.set({ 'n', 'i' }, '<C-s>', '<C-\\><C-N>:w<Enter>')
+
+-- Format file
+vim.keymap.set({ 'n', 'i' }, '<C-f>', '<C-\\><C-N>:Format<Enter>')
 
 -- Open LazyGit
 vim.keymap.set('n', '<leader>gg', '<C-\\><C-N>:LazyGit<Enter>')

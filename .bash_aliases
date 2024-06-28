@@ -1,7 +1,8 @@
 alias downward="~/Programs/downward/fast-downward.py"
+alias VAL="~/Programs/VAL/build/bin/Validate"
 
 gc() {
-    git clone git@github.com:jamadaha/$1.git
+    git clone --recurse-submodules git@github.com:jamadaha/$1.git
 }
 
 lama() {
